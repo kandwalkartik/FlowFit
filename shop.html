@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop - FlowFit</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">FlowFit</div>
+      <ul class="nav-links">
+        <li><a href="run me.html">Home</a></li>
+        <li><a href="workouts.html">Workouts</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="run me.html#about">About</a></li>
+      </ul>
+      <a href="membership.html" class="cta-button">Join Now</a>
+    </nav>
+  </header>
+
+  <section class="shop-hero">
+    <h1>FlowFit Shop</h1>
+    <p>Premium fitness equipment and accessories for your workout journey</p>
+  </section>
+
+  <section class="products">
+    <h2>Featured Products</h2>
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="media/yogamat.jpg" alt="Premium Yoga Mat">
+        <h3>Premium Yoga Mat</h3>
+        <p class="price">Rs 4,999</p>
+        <p class="description">Non-slip, eco-friendly yoga mat for all your sessions</p>
+        <button class="cta-button" onclick="showPurchasePopup('Premium Yoga Mat', 'Rs 4,999')">Contact for Purchase</button>
+      </div>
+
+      <div class="product-card">
+        <img src="media/dumbbell.jpg" alt="Adjustable Dumbbells">
+        <h3>Adjustable Dumbbells</h3>
+        <p class="price">Rs 8,999</p>
+        <p class="description">Versatile dumbbells for home workouts</p>
+        <button class="cta-button" onclick="showPurchasePopup('Adjustable Dumbbells', 'Rs 8,999')">Contact for Purchase</button>
+      </div>
+
+      <div class="product-card">
+        <img src="media/resistance.jpg" alt="Resistance Bands Set">
+        <h3>Resistance Bands Set</h3>
+        <p class="price">Rs 2,999</p>
+        <p class="description">Complete set of resistance bands for strength training</p>
+        <button class="cta-button" onclick="showPurchasePopup('Resistance Bands Set', 'Rs 2,999')">Contact for Purchase</button>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 FlowFit. All rights reserved. <br>Kartik Kandwal - 23BCT0060</p>
+  </footer>
+
+  <script>
+    function showPurchasePopup(productName, price) {
+      alert(`Thank you for your interest in ${productName}!\n\nProduct: ${productName}\nPrice: ${price}\n\nOur team will contact you shortly for purchase details.\nFor immediate assistance, please contact: support@flowfit.com`);
+    }
+  </script>
+</body>
+</html> 

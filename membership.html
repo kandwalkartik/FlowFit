@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Membership - FlowFit</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">FlowFit</div>
+      <ul class="nav-links">
+        <li><a href="run me.html">Home</a></li>
+        <li><a href="workouts.html">Workouts</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="run me.html#about">About</a></li>
+      </ul>
+      <a href="membership.html" class="cta-button">Join Now</a>
+    </nav>
+  </header>
+
+  <section class="membership">
+    <h2>Choose Your Membership Plan</h2>
+    <div class="membership-cards">
+      <div class="card">
+        <h3>Basic Plan</h3>
+        <p class="price">₹1999/month</p>
+        <ul>
+          <li>Access to gym facilities</li>
+          <li>Basic workout plans</li>
+          <li>Email support</li>
+        </ul>
+        <button class="cta-button" onclick="thankYou()">Select Plan</button>
+      </div>
+      <div class="card">
+        <h3>Pro Plan</h3>
+        <p class="price">₹3999/month</p>
+        <ul>
+          <li>Access to gym and live classes</li>
+          <li>Personalized workout plans</li>
+          <li>Priority support</li>
+        </ul>
+        <button class="cta-button" onclick="thankYou()">Select Plan</button>
+      </div>
+      <div class="card">
+        <h3>Premium Plan</h3>
+        <p class="price">₹5999/month</p>
+        <ul>
+          <li>Unlimited access to all facilities</li>
+          <li>1-on-1 coaching sessions</li>
+          <li>24/7 support</li>
+        </ul>
+        <button class="cta-button" onclick="thankYou()">Select Plan</button>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 FlowFit. All rights reserved. <br>Kartik Kandwal - 23BCT0060</p>
+  </footer>
+
+  <script>
+    function thankYou() {
+      alert("Thank you for your support!");
+      // You could add redirection or form submission logic here
+    }
+  </script>
+</body>
+</html>

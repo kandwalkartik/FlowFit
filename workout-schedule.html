@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Workout Schedule - FlowFit</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">FlowFit</div>
+      <ul class="nav-links">
+        <li><a href="run me.html">Home</a></li>
+        <li><a href="workouts.html">Workouts</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="run me.html#about">About</a></li>
+      </ul>
+      <a href="membership.html" class="cta-button">Join Now</a>
+    </nav>
+  </header>
+
+  <!-- Workout Schedule Generator -->
+  <section class="schedule-generator">
+    <h2>Create Your Workout Schedule</h2>
+    <p>Select your preferred exercise type, exercise, day, and time to generate a personalized workout schedule.</p>
+    <form id="scheduleForm">
+      <div class="form-group">
+        <label for="workout-type">Select Exercise Type:</label>
+        <select id="workout-type" name="workout-type" required>
+          <option value="">--Select--</option>
+          <option value="yoga">Yoga</option>
+          <option value="gym">Gym</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="exercise">Select Exercise:</label>
+        <select id="exercise" name="exercise" required disabled>
+          <option value="">--Select--</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="day">Select Day:</label>
+        <select id="day" name="day" required>
+          <option value="">--Select--</option>
+          <option value="Monday">Monday</option>
+          <option value="Tuesday">Tuesday</option>
+          <option value="Wednesday">Wednesday</option>
+          <option value="Thursday">Thursday</option>
+          <option value="Friday">Friday</option>
+          <option value="Saturday">Saturday</option>
+          <option value="Sunday">Sunday</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="time">Select Time:</label>
+        <input type="time" id="time" name="time" required>
+      </div>
+      <button type="submit" class="cta-button-schedule">Add to Schedule</button>
+    </form>
+  </section>
+
+  <!-- Workout Schedule Display -->
+  <section class="workout-schedule">
+    <h2>Your Workout Schedule</h2>
+    <p>Here's your personalized workout timetable. You can add or remove exercises as needed.</p>
+    <div id="scheduleTable">
+      <!-- Schedule will be dynamically populated here -->
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 FlowFit. All rights reserved. <br>Kartik Kandwal - 23BCT0060</p>
+  </footer>
+
+  <script src="script.js?v=2"></script>
+</body>
+</html>
